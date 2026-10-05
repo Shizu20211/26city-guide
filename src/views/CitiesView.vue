@@ -1,10 +1,12 @@
 <script setup>
 import { cities } from '@/data/spots'
+
+const heroImage = `${import.meta.env.BASE_URL}images/copenhagen.jpg`
 </script>
 
 <template>
     <main>
-        <section class="hero">
+        <section class="hero" :style="{ '--hero-image': `url(${heroImage})` }">
             <div class="container hero-content" v-reveal>
                 <p class="eyebrow">
                     NORDIC CITY GUIDE
@@ -110,7 +112,7 @@ import { cities } from '@/data/spots'
     right: -3%;
     width: min(46vw, 610px);
     aspect-ratio: 4 / 5;
-    background: url('/images/copenhagen.jpg') center / cover;
+    background: var(--hero-image) center / cover;
     border: 3px solid var(--color-border);
     border-radius: 42% 58% 48% 52% / 8% 10% 7% 9%;
     box-shadow: 12px 14px 0 rgba(53, 47, 43, 0.22);

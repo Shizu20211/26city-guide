@@ -1,3 +1,4 @@
+const BASE_URL = import.meta.env.BASE_URL
 export const cities = [
     {
         id: 'stockholm',
@@ -8,7 +9,7 @@ export const cities = [
         subtitle: '水上之城與北歐設計',
         description:
             '由多座島嶼組成的北歐城市，融合歷史建築、設計與自然景觀。',
-        image: '/images/stockholm.jpg'
+        image: `${BASE_URL}images/stockholm.jpg`
     },
 
     {
@@ -20,7 +21,7 @@ export const cities = [
         subtitle: '設計、單車與彩色港灣',
         description:
             '以自行車文化、彩色港口與北歐生活美學聞名。',
-        image: '/images/copenhagen.jpg'
+        image: `${BASE_URL}images/copenhagen.jpg`
     },
 
     {
@@ -32,7 +33,7 @@ export const cities = [
         subtitle: '波羅的海旁的設計城市',
         description:
             '結合海岸、建築、桑拿與芬蘭設計文化。',
-        image: '/images/helsinki.jpg'
+        image: `${BASE_URL}images/helsinki.jpg`
     }
 ]
 
@@ -42,7 +43,7 @@ export const spots = [
         city: 'stockholm',
         name: '斯德哥爾摩老城',
         type: 'attraction',
-        image: '/images/gamla-stan.jpg',
+        image: `${BASE_URL}images/gamla-stan.jpg`,
         shortDescription:
             '穿梭中世紀巷弄與色彩鮮明的老城街區。',
         description:
@@ -53,7 +54,7 @@ export const spots = [
         city: 'stockholm',
         name: '瓦薩沉船博物館',
         type: 'culture',
-        image: '/images/vasa-museum.jpg',
+        image: `${BASE_URL}images/vasa-museum.jpg`,
         shortDescription:
             '認識保存完整的 17 世紀瓦薩號戰艦。',
         description:
@@ -64,7 +65,7 @@ export const spots = [
         city: 'stockholm',
         name: '瑞典肉丸',
         type: 'food',
-        image: '/images/swedish-meatballs.jpg',
+        image: `${BASE_URL}images/swedish-meatballs.jpg`,
         shortDescription:
             '品嚐搭配奶油醬與越橘果醬的瑞典經典料理。',
         description:
@@ -76,7 +77,7 @@ export const spots = [
         city: 'copenhagen',
         name: '新港',
         type: 'attraction',
-        image: '/images/nyhavn.jpg',
+        image: `${BASE_URL}images/nyhavn.jpg`,
         shortDescription:
             '漫步彩色港口，感受哥本哈根最經典的城市風景。',
         description:
@@ -87,7 +88,7 @@ export const spots = [
         city: 'copenhagen',
         name: '路易斯安那現代藝術博物館',
         type: 'culture',
-        image: '/images/louisiana-museum.jpg',
+        image: `${BASE_URL}images/louisiana-museum.jpg`,
         shortDescription:
             '結合現代藝術、建築與海岸景觀的文化空間。',
         description:
@@ -98,7 +99,7 @@ export const spots = [
         city: 'copenhagen',
         name: '丹麥開放式三明治',
         type: 'food',
-        image: '/images/smorrebrod.jpg',
+        image: `${BASE_URL}images/smorrebrod.jpg`,
         shortDescription:
             '以黑麥麵包搭配多種配料的丹麥經典料理。',
         description:
@@ -110,7 +111,7 @@ export const spots = [
         city: 'helsinki',
         name: '赫爾辛基大教堂',
         type: 'attraction',
-        image: '/images/helsinki-cathedral.jpg',
+        image: `${BASE_URL}images/helsinki-cathedral.jpg`,
         shortDescription:
             '欣賞議會廣場旁純白的新古典主義地標。',
         description:
@@ -121,7 +122,7 @@ export const spots = [
         city: 'helsinki',
         name: '芬蘭堡',
         type: 'culture',
-        image: '/images/suomenlinna.jpg',
+        image: `${BASE_URL}images/suomenlinna.jpg`,
         shortDescription:
             '搭船前往島嶼上的歷史海上堡壘。',
         description:
@@ -132,7 +133,7 @@ export const spots = [
         city: 'helsinki',
         name: '肉桂捲',
         type: 'food',
-        image: '/images/korvapuusti.jpg',
+        image: `${BASE_URL}images/korvapuusti.jpg`,
         shortDescription:
             '搭配咖啡享用芬蘭最經典的肉桂麵包。',
         description:
